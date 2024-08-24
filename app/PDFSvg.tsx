@@ -137,7 +137,6 @@ function svgToJSXWithRelPositioning(
 export const createSvgComponent = (svgXml: string) => {
 	if (!svgXml || svgXml === '') return null;
 	const svg = svgXml.replaceAll('px', 'pt');
-	console.log('svg', svg);
 	const parsed: RootNode = parse(svg);
 	return svgToJSXWithRelPositioning(parsed.children[0], 0);
 };
