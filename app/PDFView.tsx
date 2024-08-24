@@ -26,8 +26,6 @@ const svgTest2 = `
 const chart = createSvgComponent(svgTest);
 const chart2 = createSvgComponent(renderToString(<BiAbacus />));
 const chart3 = createSvgComponent(svgTest2);
-console.log(renderToString(<BiAbacus />));
-console.log(svgTest);
 
 const PDFView = () => (
 	<Document>
